@@ -1,0 +1,32 @@
+esphome:
+  name: basement_sensor
+  platform: ESP32
+  board: featheresp32
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+binary_sensor:
+  - platform: status
+    name: "Basement Sensor Status"
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: "basement_sensor"
+
+ota:
+  password: "basement_sensor"
+
+sensor:
+  - platform: dht
+    pin: 21
+    model: DHT22
+    temperature:
+      name: "Basement Temperature"
+    humidity:
+      name: "Basement Humidity"
+    update_interval: 60s

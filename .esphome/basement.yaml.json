@@ -1,0 +1,24 @@
+{
+  "arduino_version": "espressif32@1.6.0", 
+  "address": "basement_sensor.local", 
+  "storage_version": 1, 
+  "esphome_version": "1.13.6", 
+  "build_path": "basement_sensor", 
+  "name": "basement_sensor", 
+  "loaded_integrations": [
+    "api", 
+    "binary_sensor", 
+    "dht", 
+    "esphome", 
+    "logger", 
+    "network", 
+    "ota", 
+    "sensor", 
+    "status", 
+    "wifi"
+  ], 
+  "firmware_bin_path": "basement_sensor/.pioenvs/basement_sensor/firmware.bin", 
+  "board": "featheresp32", 
+  "esp_platform": "ESP32", 
+  "src_version": 1
+}
